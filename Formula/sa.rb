@@ -1,24 +1,16 @@
 class Sa < Formula
   desc "Personal AI agent assistant"
   homepage "https://github.com/sichengchen/sa"
-  version "2026.2.0"
+  version "2026.2.3"
   license "MIT"
 
-  on_arm do
-    url "https://github.com/sichengchen/sa/releases/download/v2026.2.0/sa-darwin-arm64"
-    sha256 "PLACEHOLDER"
-  end
-
-  on_intel do
-    url "https://github.com/sichengchen/sa/releases/download/v2026.2.0/sa-darwin-x86_64"
-    sha256 "PLACEHOLDER"
-  end
+  url "https://github.com/sichengchen/sa/releases/download/v2026.2.3/sa-darwin"
+  sha256 "05ef8d3f6bd977cc364d66c08c42c0ece238fbd187ea8325e41910104004ccb3"
 
   depends_on "bun"
 
   def install
-    binary = Dir["sa-darwin-*"].first
-    bin.install binary => "sa"
+    bin.install "sa-darwin" => "sa"
   end
 
   test do
