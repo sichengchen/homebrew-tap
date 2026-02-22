@@ -1,11 +1,11 @@
 class Sa < Formula
   desc "Personal AI agent assistant"
   homepage "https://github.com/sichengchen/sa"
-  version "2026.2.15"
+  version "2026.2.16"
   license "MIT"
 
-  url "https://github.com/sichengchen/sa/releases/download/v2026.2.15/sa-darwin"
-  sha256 "04d5332165632ad3c39864cc4adb8436fbff7c03acf2b0cf66439b5b8cfb2dad"
+  url "https://github.com/sichengchen/sa/releases/download/v2026.2.16/sa-darwin"
+  sha256 "c0922630db508a642c2a3e045277df7c05dd063e29df7e47035b7302e6b37c16"
 
   depends_on "oven-sh/bun/bun"
 
@@ -14,11 +14,8 @@ class Sa < Formula
   end
 
   service do
-    run [opt_bin/"sa", "__engine"]
-    keep_alive true
+    run [opt_bin/"sa", "engine", "start"]
     working_dir Dir.home
-    log_path var/"log/sa/engine.log"
-    error_log_path var/"log/sa/engine.log"
     environment_variables SA_HOME: "#{Dir.home}/.sa", PATH: "#{HOMEBREW_PREFIX}/bin:#{HOMEBREW_PREFIX}/sbin:/usr/bin:/bin:/usr/sbin:/sbin"
   end
 
