@@ -1,8 +1,8 @@
 class AppleCalendarCli < Formula
   desc "Command-line tool for Apple Calendar operations via EventKit"
   homepage "https://github.com/sichengchen/apple-calendar-cli"
-  url "https://github.com/sichengchen/apple-calendar-cli/archive/refs/tags/v0.1.0.tar.gz"
-  sha256 "9739c34e50cd4b5f928e33f6c34330060eace46f98d5aa6c563f1328fb3e532b"
+  url "https://github.com/sichengchen/apple-calendar-cli/archive/refs/tags/v0.1.1.tar.gz"
+  sha256 "dffdc4bcf74b86bde4aa79025888db0adf441139bb38beba6f8b4a2aa3296cad"
   license "MIT"
 
   depends_on :macos
