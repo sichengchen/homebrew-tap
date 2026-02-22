@@ -1,11 +1,11 @@
 class Sa < Formula
   desc "Personal AI agent assistant"
   homepage "https://github.com/sichengchen/sa"
-  version "2026.2.18"
+  version "2026.2.19"
   license "MIT"
 
-  url "https://github.com/sichengchen/sa/releases/download/v2026.2.18/sa-darwin"
-  sha256 "a1256b3d7226710bd6a2c2698c4006b28afd9a4f3c770b49bd9f5cd4dbb416df"
+  url "https://github.com/sichengchen/sa/releases/download/v2026.2.19/sa-darwin"
+  sha256 "2e93be14bab04686f5c7ccb5be44861a88a61ea74307093f700862546a986e24"
 
   depends_on "oven-sh/bun/bun"
 
