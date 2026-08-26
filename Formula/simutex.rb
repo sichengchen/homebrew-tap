@@ -1,8 +1,8 @@
 class Simutex < Formula
   desc "Tiny mutex for iOS Simulators"
   homepage "https://github.com/sichengchen/simutex"
-  url "https://github.com/sichengchen/simutex/releases/download/v0.2.0/simutex-0.2.0-macos-arm64.tar.gz"
-  sha256 "8b3c4d9b2a6f050385ffcbb866fc8d145c9b5117a679e81ed1649cb1bb3704a8"
+  url "https://github.com/sichengchen/simutex/releases/download/v0.2.1/simutex-0.2.1-macos-arm64.tar.gz"
+  sha256 "81ef8e467783e90b6b20fbd29b41767e3946280e3e868dbbaf3131c04684585c"
   license "MIT"
 
   depends_on :macos
