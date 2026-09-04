@@ -1,6 +1,6 @@
 cask "rajio" do
-  version "0.10.0"
-  sha256 "d7142d4eceabcc145fdf265fd64eadc7f025178af8a34c1c8aeb6d7b93f82b20"
+  version "0.10.1"
+  sha256 "ff4a46e53c5d01cbd326c15aaeb23eabae53133e5ec8fd794ce40c63a88e1edc"
 
   url "https://github.com/sichengchen/rajio/releases/download/v#{version}/Rajio-#{version}-universal.dmg"
   name "Rajio"
