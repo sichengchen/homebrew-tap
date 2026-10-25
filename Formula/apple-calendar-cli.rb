@@ -1,8 +1,8 @@
 class AppleCalendarCli < Formula
   desc "Command-line tool for Apple Calendar operations via EventKit"
   homepage "https://github.com/sichengchen/apple-calendar-cli"
-  url "https://github.com/sichengchen/apple-calendar-cli/archive/refs/tags/v0.1.2.tar.gz"
-  sha256 "5baa6374b1ae157c78cabc287a85eff58d54eeac43c2c2ad915d4885e3af73b9"
+  url "https://github.com/sichengchen/apple-calendar-cli/archive/refs/tags/v0.1.3.tar.gz"
+  sha256 "a752f2b667e94b5b55d06e3a2781c92de8a191baee924ce8dea8df88ea428ef5"
   license "MIT"
 
   depends_on macos: :sonoma
@@ -15,7 +15,7 @@ class AppleCalendarCli < Formula
   end
 
   test do
-    assert_equal "0.1.2", shell_output("#{bin}/apple-calendar-cli --version").strip
+    assert_equal "0.1.3", shell_output("#{bin}/apple-calendar-cli --version").strip
     system "codesign", "--verify", "--strict", "-R",
            '=identifier "com.scchan.apple-calendar-cli"', bin/"apple-calendar-cli"
   end
